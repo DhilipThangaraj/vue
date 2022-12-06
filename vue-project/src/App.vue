@@ -411,7 +411,7 @@ li {
 </style> -->
 <!-- 
 9.Grid with sort and filter -->
-<script>
+<!-- <script>
 import DemoGrid from "./components/GridView.vue";
 
 export default {
@@ -436,4 +436,4 @@ export default {
   <form id="search">Search <input name="query" v-model="searchQuery" /></form>
   <DemoGrid :data="gridData" :columns="gridColumns" :filter-key="searchQuery">
   </DemoGrid>
-</template>
+</template> -->
