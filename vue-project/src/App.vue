@@ -235,7 +235,7 @@ export default {
 
 <!-- 7. A Simple markdown editor -->
 
-<script>
+<!-- <script>
 import { marked } from "marked";
 import { debounce } from "lodash-es";
 
@@ -294,4 +294,4 @@ body {
 code {
   color: #f66;
 }
-</style>
+</style> -->
