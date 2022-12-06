@@ -144,7 +144,7 @@ button {
 </style> -->
 
 <!-- 5.Form Binding -->
-<script>
+<!-- <script>
 export default {
   data() {
     return {
@@ -164,10 +164,7 @@ export default {
   <h2>Single Check Box</h2>
   <input type="checkbox" id="checkbox" v-model="checked" />
   <label for="checkbox">Checked : {{ checked }}</label>
-  <!--
-    multiple checkboxes can bind to the same
-    array v-model value
-  -->
+ 
   <h2>Multi Check Box</h2>
   <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
   <label for="jack">Jack</label>
@@ -185,6 +182,7 @@ export default {
   <br/>
   <input type="radio" id="three" value="Three" v-model="picked"/>
   <label for="one">Three</label>
+  <br/>
   <span>Picked: {{ picked }}</span>
   <h2>Select</h2>
   <select v-model="selected">
@@ -204,4 +202,33 @@ export default {
   </select>
   <span>Selected: {{ multiSelected }}</span>
 </template>
+<style></style> -->
+
+<!-- 6.simple component -->
+<script>
+import TodoItemVue from "./components/TodoItem.vue";
+
+export default {
+  components: {
+    TodoItemVue,
+  },
+  data() {
+    return {
+      groceryList: [
+        { id: 0, text: "Vegetables" },
+        { id: 1, text: "Cheese" },
+        { id: 2, text: "Whatever else humans are supposed to eat" },
+      ],
+    };
+  },
+};
+</script>
+
+<template>
+  <ol>
+    <TodoItemVue v-for="item in groceryList" :todo="item" :key="item.id">
+    </TodoItemVue>
+  </ol>
+</template>
+
 <style></style>
