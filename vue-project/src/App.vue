@@ -205,7 +205,7 @@ export default {
 <style></style> -->
 
 <!-- 6.simple component -->
-<script>
+<!-- <script>
 import TodoItemVue from "./components/TodoItem.vue";
 
 export default {
@@ -231,4 +231,4 @@ export default {
   </ol>
 </template>
 
-<style></style>
+<style></style> -->
